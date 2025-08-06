@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  font-family: "Courier"; 
 }
 
 .menu {
@@ -9,17 +10,13 @@
 }
 
 .menu a {
-  background-color: #e5e5e5;
   padding: 8px;
   margin-top: 7px;
   display: block;
   width: 100%;
-  color: black;
 }
 
 .main {
-  background-color: white;
-  color: black; 
   float: left;
   width: 80%;
   padding: 0 20px;
@@ -29,6 +26,13 @@
   /* For mobile phones: */
   .menu, .main {
     width: 100%;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .menu, .main, * { 
+    color: #cccccc; 
+    background-color: #1e1e1e;
   }
 }
 
